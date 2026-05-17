@@ -1,0 +1,163 @@
+.section {
+  position: relative;
+  padding: 40px 2rem 48px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgPlaceholder {
+  position: absolute;
+  inset: 0;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.bgPlaceholderText {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.04em;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.72);
+  z-index: 0;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1060px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headline {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+}
+
+.cardsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  width: calc(33.333% - 12px);
+  flex-shrink: 0;
+  height: 360px;
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.04);
+}
+
+.cardPlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardPlaceholder svg {
+  opacity: 0.3;
+}
+
+.cardGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0) 30%
+  );
+  z-index: 1;
+}
+
+.cardText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  z-index: 2;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-white);
+  text-align: left;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.cardSpeaker {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  text-align: left;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 36px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1.5px solid var(--color-white);
+  padding: 10px 28px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+}
+
+@media (max-width: 768px) {
+  .cardsGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    height: 260px;
+  }
+}

@@ -1,0 +1,15 @@
+:global(:root) {
+  --color-charcoal: #1a1a1a;
+  --color-teal: #3a9ea5;
+  --color-white: #ffffff;
+  --color-light-gray: #f5f5f5;
+  --color-overlay: rgba(0, 0, 0, 0.45);
+  --color-primary: var(--color-teal);
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+.app {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+}

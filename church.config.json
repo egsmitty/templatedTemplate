@@ -1,0 +1,166 @@
+{
+  "_comment": "Replace all values below with your church information. Do not change the key names.",
+
+  "churchName": "Grace Community Church",
+  "location": "Your City, MN",
+  "tagline": "You Belong Here",
+  "primaryColor": "#3a9ea5",
+
+  "logo": {
+    "full": "/assets/logo-full.png",
+    "mark": "/assets/logo-mark.png"
+  },
+
+  "nav": {
+    "links": [
+      {
+        "label": "About Us",
+        "hasDropdown": true,
+        "children": [
+          { "label": "Our Staff", "url": "#" },
+          { "label": "What We Believe", "url": "#" },
+          { "label": "Our Story", "url": "#" }
+        ]
+      },
+      {
+        "label": "Get Involved",
+        "hasDropdown": true,
+        "children": [
+          { "label": "Small Groups", "url": "#" },
+          { "label": "Bible Classes", "url": "#" },
+          { "label": "Serve", "url": "#" },
+          { "label": "Outreach", "url": "#" },
+          { "label": "Prayer", "url": "#" },
+          { "label": "Baptism", "url": "#" }
+        ]
+      },
+      {
+        "label": "Kids & Youth",
+        "hasDropdown": true,
+        "children": [
+          { "label": "Kids Ministry", "url": "#" },
+          { "label": "Youth Group", "url": "#" },
+          { "label": "Family Resources", "url": "#" }
+        ]
+      },
+      { "label": "Messages", "url": "#", "hasDropdown": false },
+      { "label": "Giving", "url": "#", "hasDropdown": false }
+    ]
+  },
+
+  "hero": {
+    "backgroundVideo": "",
+    "backgroundImage": "",
+    "headline": "You Belong Here",
+    "ctaText": "Latest Message",
+    "ctaUrl": "#"
+  },
+
+  "serviceBanner": {
+    "day": "Sundays",
+    "times": ["Time 1", "Time 2"],
+    "directionsUrl": "#",
+    "directionsText": "Get Directions"
+  },
+
+  "featuredEvent": {
+    "backgroundImage": "",
+    "logoImage": "",
+    "name": "Example Event",
+    "date": "Example Date",
+    "time": "Example Time",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "ctaText": "Learn More",
+    "ctaUrl": "#"
+  },
+
+  "experience": {
+    "headline": "Experience Our Church",
+    "subtext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+    "cards": [
+      { "label": "Services", "image": "", "url": "#", "placeholderColor": "#4a4a4a" },
+      { "label": "Music",    "image": "", "url": "#", "placeholderColor": "#5a4a3a" },
+      { "label": "Messages", "image": "", "url": "#", "placeholderColor": "#3a4a5a" }
+    ]
+  },
+
+  "ourStories": {
+    "headline": "Our Stories",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    "ctaText": "Watch More",
+    "ctaUrl": "#",
+    "featuredVideo": {
+      "embedUrl": "",
+      "thumbnailImage": "",
+      "title": "A Changed Life"
+    }
+  },
+
+  "recentMessages": {
+    "headline": "Recent Messages",
+    "backgroundImage": "",
+    "ctaText": "View All Messages",
+    "ctaUrl": "#",
+    "messages": [
+      { "title": "Example Message 1", "speaker": "Example Speaker", "image": "", "url": "#", "placeholderColor": "#2a2a2a" },
+      { "title": "Example Message 2", "speaker": "Example Speaker", "image": "", "url": "#", "placeholderColor": "#323232" },
+      { "title": "Example Message 3", "speaker": "Example Speaker", "image": "", "url": "#", "placeholderColor": "#2e2e2e" }
+    ]
+  },
+
+  "contact": {
+    "headline": "Questions?",
+    "subheadline": "Reach Out!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "submitText": "Submit",
+    "submitUrl": ""
+  },
+
+  "footer": {
+    "churchName": "Grace Community Church",
+    "address": "123 Church Street, Your City, MN 55000",
+    "email": "hello@yourchurch.org",
+    "phone": "(000) 000-0000",
+    "columns": [
+      {
+        "heading": "Church",
+        "links": [
+          { "label": "What We Believe", "url": "#" },
+          { "label": "Our Staff",        "url": "#" },
+          { "label": "Careers",          "url": "#" },
+          { "label": "Contact",          "url": "#" }
+        ]
+      },
+      {
+        "heading": "Get Involved",
+        "links": [
+          { "label": "Small Groups",  "url": "#" },
+          { "label": "Bible Classes", "url": "#" },
+          { "label": "Baptism",       "url": "#" },
+          { "label": "Serve",         "url": "#" },
+          { "label": "Prayer",        "url": "#" }
+        ]
+      },
+      {
+        "heading": "Resources",
+        "links": [
+          { "label": "Messages",         "url": "#" },
+          { "label": "Family Resources", "url": "#" },
+          { "label": "Give Online",      "url": "#" },
+          { "label": "Join Email List",  "url": "#" }
+        ]
+      }
+    ],
+    "social": {
+      "instagram": "#",
+      "facebook":  "#",
+      "youtube":   "#",
+      "tiktok":    "#"
+    },
+    "copyright": "© 2024 Grace Community Church. All Rights Reserved.",
+    "legalLinks": [
+      { "label": "Terms",          "url": "#" },
+      { "label": "Privacy Policy", "url": "#" }
+    ]
+  }
+}
