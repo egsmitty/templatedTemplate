@@ -5,6 +5,7 @@ export default function Navbar({ nav, logo, churchName, location }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [openAccordion, setOpenAccordion] = useState(null)
   const [logoError, setLogoError] = useState(false)
+  const [markError, setMarkError] = useState(false)
 
   const toggleAccordion = (i) => {
     setOpenAccordion(openAccordion === i ? null : i)
@@ -16,6 +17,18 @@ export default function Navbar({ nav, logo, churchName, location }) {
     <header className={styles.navbar}>
       <div className={styles.inner}>
         <a href="/" className={styles.logoLink}>
+          {logo.mark && !markError ? (
+            <img
+              src={logo.mark}
+              alt=""
+              className={styles.logoMark}
+              onError={() => setMarkError(true)}
+            />
+          ) : (
+            <div className={styles.logoMarkFallback}>
+              <span className={styles.logoMarkLetter}>{churchName[0]}</span>
+            </div>
+          )}
           {logo.full && !logoError ? (
             <img
               src={logo.full}

@@ -25,6 +25,32 @@
   flex-shrink: 0;
 }
 
+.logoMark {
+  height: 44px;
+  width: auto;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.logoMarkFallback {
+  height: 44px;
+  width: 44px;
+  background-color: var(--color-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.logoMarkLetter {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
 .logoImg {
   height: 78px;
   width: auto;
