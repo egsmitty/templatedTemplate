@@ -10,10 +10,7 @@ const PinIcon = () => (
 export default function ServiceBanner({ serviceBanner }) {
   const { day, times, directionsUrl, directionsText } = serviceBanner
 
-  const allButLast = times.slice(0, -1)
-  const last = times[times.length - 1]
-  const timesDisplay =
-    times.length > 1 ? `${allButLast.join(', ')} & ${last}` : last
+  const timesDisplay = times.join(', ') + ' (, etc.)'
 
   return (
     <div className={styles.banner}>
